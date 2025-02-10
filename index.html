@@ -7,10 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="fake-content">
+    <!-- Fake News Content -->
+    <div class="fake-content" id="fakeNewsContent">
         <h1>Breaking News: Kill Tony Host Tony Hinchcliffe Reveals His Secret Relationship with Redban</h1>
         <p><em>Marriage to be announced soon...</em></p>
-        <a href="valentine_page.html" class="link">Click here to read more</a>
+        <a href="javascript:void(0);" id="readMoreLink" class="link">Click here to read more</a>
     </div>
+
+    <!-- Valentine Content (Initially Hidden) -->
+    <div class="valentine-container" id="valentineContent" style="display: none;">
+        <h1>Will You Be My Valentine?</h1>
+        <div class="cat-img">
+            <img src="https://t3.ftcdn.net/jpg/03/04/43/28/360_F_304432889_pQfSMT96z9RoxA6M1JtAEE6hXA3XKimz.jpg" alt="Cute Cat">
+        </div>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+        <div id="response"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
